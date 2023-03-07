@@ -1,0 +1,65 @@
+@font-face {
+	font-family: SamsungOne;
+	src: URL('../fonts/samsung.ttf') format('truetype');
+}
+
+html, body {
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family: SamsungOne;
+	font-weight: 600;
+	text-align: center;
+}
+
+.wrapper {
+	padding: 20px;
+	font-size: 30px;
+	width: 1880px;
+	height: 1040px;
+}
+
+.header {
+	height: 100px;
+}
+
+.footer {
+	height: 80px;
+	clear: both;
+}
+
+.content {
+	height: 840px;
+}
+
+.cardL, .cardN {
+	border: 10px solid transparent;
+	width: 250px;
+	height: 300px;
+	margin-bottom: 50px;
+	margin-right: 40px;
+	margin-left: 40px;
+	float: left;
+	background-image: url(../image/1.png);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+	background-origin: content-box;
+	-webkit-transition: background 1s;
+	display: flex;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.cardN.selected, .cardL.selected {
+	background-image: url("../image/2.png");
+	-webkit-transition: background 1s;
+}
+
+.cardN.focused {
+	border: 10px solid red;
+}
+
+.cardL.focused {
+	border: 10px solid green;
+}
