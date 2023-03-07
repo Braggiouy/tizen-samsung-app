@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log*
+*.log
+bin
+.env
+.nginx
+.vscode
+.idea
+.DS_Store
+npm-debug.log
+.scannerwork
+
+.eslintcache
+
+.env-*
+!.env-sample
